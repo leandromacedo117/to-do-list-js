@@ -32,6 +32,11 @@ const saveTodo = (text) =>{
     editButton.classList.add("edit-todo")
     editButton.innerHTML = ' <i class="fa-solid fa-pen"></i>'
     createSpan.appendChild(editButton)
+
+     const editButton = document.querySelector("button")
+    editButton.classList.add("edit-todo")
+    editButton.innerHTML = ' <i class="fa-solid fa-pen"></i>'
+    createSpan.appendChild(editButton)
  
    
 }
