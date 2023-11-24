@@ -1,16 +1,14 @@
-const finishTodo = document.querySelector(".test")
+
 const inputNew = document.querySelector("#new-task")
-const createtask = document.querySelector(".material-symbols-outlined")
 const listDone = document.querySelector(".list-done")
 const listTask =document.querySelector(".tasks-list")
 const h4 = document.querySelector("h4")
 const span = document.querySelector(".span")
 const button = document.querySelector("button")
-const deletebu = document.querySelector(".delete-todo")
-
-let valor = 1
 
 
+
+// functios
 const saveTodo = (text) =>{
     const todo = document.createElement("div")
     todo.classList.add("list-done")
@@ -50,20 +48,21 @@ saveTodo()
 
 })
 
+// Events
 document.addEventListener("click" ,function(e){
    
     const targetEl = e.target;
     const parentEl = targetEl.closest("div")
     let contextTitle;
-//    finally tasks
+//    finished tasks
     if (parentEl && targetEl.querySelector("h4"))
     {
         contextTitle = parentEl.querySelector("h4").innerText
     } 
 
     if(targetEl.classList.contains("finish-todo")){
-        parentEl.classList.toggle("finally")
-        console.log('tes')
+        parentEl.classList.toggle("finish")
+        
     }
     
     // remove task
