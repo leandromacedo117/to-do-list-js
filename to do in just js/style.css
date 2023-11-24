@@ -46,7 +46,7 @@ body{
 
     margin-left: 0px;
 }
-.v{
+.tasks-button{
     margin-top: 27px;
 }
 
@@ -77,21 +77,33 @@ body{
 
 button{
 
-    padding: 10px;
+    padding: 9px;
     border-radius: 20px;
     border: none;
     background-color: #fff;
-    cursor: pointer;   
-    
+    cursor: pointer;
+    margin: 5px;
+       
 }
 
 
-.finally h4{
+
+
+
+.finally{
     text-decoration: line-through;
 }
 
 .span{
     cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+    
+}
+
+.none{
+    display: none;
 }
 
 
